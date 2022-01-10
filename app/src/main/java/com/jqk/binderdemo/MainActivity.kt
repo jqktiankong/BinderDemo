@@ -73,6 +73,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        stopService(intent)
+        stopService(mIntent)
     }
 }
