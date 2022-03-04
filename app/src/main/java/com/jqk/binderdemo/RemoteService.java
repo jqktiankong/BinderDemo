@@ -71,5 +71,11 @@ public class RemoteService extends Service {
                 mCallbacks.unregister(callback);
             }
         }
+
+        @Override
+        public IBinder getBinder() throws RemoteException {
+            // 返回IBinder对象，实现一个服务绑定多个接口
+            return null;
+        }
     };
 }

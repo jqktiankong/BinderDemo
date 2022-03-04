@@ -10,4 +10,6 @@ interface IRemoteService {
     void registerCallback(IRemoteSerciceCallback callback);
 
     void unregisterCallback(IRemoteSerciceCallback callback);
+
+    IBinder getBinder();
 }
